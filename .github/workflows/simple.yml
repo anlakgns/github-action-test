@@ -1,0 +1,20 @@
+name: Shell Commands
+
+on: [push]
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello World"
+      - name: learn versions
+        run: |
+          npm -v
+          node -v
+
+  job-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job2-echo a string
+        run: echo "Hello World 2"
